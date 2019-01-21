@@ -5,6 +5,10 @@ class User
   def say_hello_to_someone(first_name)
     puts "Bonjour, #{first_name} !"
   end
+  def show_itself
+    print "Voici l'instance : "
+    puts self
+  end
 end #fin de ma classe
 
 binding.pry
@@ -15,3 +19,5 @@ julie.greet
 jean.greet
 julie.say_hello_to_someone("Patrick")
 jean.say_hello_to_someone("Moana")
+julie.show_itself
+jean.show_itself
